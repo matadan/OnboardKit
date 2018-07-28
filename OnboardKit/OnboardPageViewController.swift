@@ -81,7 +81,7 @@ internal final class OnboardPageViewController: UIViewController {
   private func customizeStyleWith(_ appearanceConfiguration: OnboardViewController.AppearanceConfiguration) {
     view.backgroundColor = appearanceConfiguration.backgroundColor
     //Style title
-    titleLabel.textColor = appearanceConfiguration.textColor
+    titleLabel.textColor = appearanceConfiguration.titleColor
     titleLabel.font = appearanceConfiguration.titleFont
     //Style description
     descriptionLabel.textColor = appearanceConfiguration.textColor

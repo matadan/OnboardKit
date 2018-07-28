@@ -142,7 +142,12 @@ public extension OnboardViewController {
     /// - note: Defualts to the blue tint color used troughout iOS
     let tintColor: UIColor
 
-    /// The color used for the title and description text
+    /// The color used for the title text
+    ///
+    /// - note: Defualts to `.darkText`
+    let titleColor: UIColor
+
+    /// The color used for the description text
     ///
     /// - note: Defualts to `.darkText`
     let textColor: UIColor
@@ -163,11 +168,13 @@ public extension OnboardViewController {
     let textFont: UIFont
 
     public init(tintColor: UIColor = UIColor(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0),
+                titleColor: UIColor = .darkText,
                 textColor: UIColor = .darkText,
                 backgroundColor: UIColor = .white,
                 titleFont: UIFont = UIFont.preferredFont(forTextStyle: .title1),
                 textFont: UIFont = UIFont.preferredFont(forTextStyle: .body)) {
       self.tintColor = tintColor
+      self.titleColor = titleColor
       self.textColor = textColor
       self.backgroundColor = backgroundColor
       self.titleFont = titleFont
